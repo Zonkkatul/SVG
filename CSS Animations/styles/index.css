@@ -4,19 +4,22 @@ body {
 
 header {
     height: 10vh;
-    border-bottom: 1px solid #2196f3;
-    background-color: #021937;
+    border-bottom: 1px solid #4b4641;
+    background-color: #3a414b;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+h1 {
+    color: #3a414b;
 }
 
 .logo {
     margin-left: 30px;
     font-size: 40px;
     font-family: 'Bangers', cursive;
-    color: rgb(255, 115, 0);
+    color: rgb(236, 240, 20);
 }
 
 .nav {
@@ -46,18 +49,17 @@ header {
 
 main {
     min-height: 90vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(240, 119, 6);
 }
 
 .main__heading, .main__info, .main__tagline {
     text-align: center;
     padding-top: 20px;
-    color: white;
+    color: rgb(12, 3, 3);
 }
 
 .main__heading {
-    color: white;
+    color: rgb(7, 3, 3);
     font-size: 30px;
     font-weight: bold;
 }
@@ -76,8 +78,8 @@ main {
 .card {
     max-width: 250px;
     min-height: 400px;
-    background-color: cornflowerblue;
-    border: 1px solid #2196f3;
+    background-color: rgb(240, 161, 14);
+    border: 1px solid #350202;
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
@@ -108,18 +110,21 @@ img {
 }
 
 img:hover {
-    animation-play-state: paused;
+    animation: float 8s ease-in-out infinite;
 }
 
-/* @keyframes imgZoom {
-	from {transform: scale(1) rotate(0deg);}
-	to {transform: scale(1.1) rotate(15deg);}
-} */
 
-@keyframes imgZoom {
-	0% {transform: scale(1) rotate(0deg);}
-	50% {transform: scale(1.1) rotate(15deg);}
-	100% {transform: scale(1) rotate(0deg);}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .btn {
@@ -129,12 +134,12 @@ img:hover {
     width: 90%;
     height: 40px;
     border: none;
-    background-color: rgb(235, 134, 2);
+    background-color: rgb(116, 103, 84);
     font-weight: bold;
 }
 
 .btn:hover {
-    background-color: rgb(2, 116, 151);
-    transition: all 0.9s ease-in-out;
-    transition-delay: 0.7s;
+    background-color: rgb(155, 7, 7);
+    transition: scale 1 1;
+    transition-delay: 0.3s;
 }
